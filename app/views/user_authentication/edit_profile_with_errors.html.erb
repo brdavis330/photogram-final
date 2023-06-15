@@ -21,9 +21,9 @@
       </div>
                                     
       <div>
-        <label for="coments_count_box">Coments count</label>
+        <label for="comments_count_box">Comments count</label>
           
-        <input id="coments_count_box" name="query_coments_count" value="<%= @current_user.coments_count %>">
+        <input id="comments_count_box" name="query_comments_count" value="<%= @current_user.comments_count %>">
           
       </div>
                       
@@ -35,9 +35,16 @@
       </div>
                       
       <div>
-        <label for="ptivate_box">Ptivate</label>
+        <label for="private_box">Private</label>
           
-        <input id="ptivate_box" name="query_ptivate" type="checkbox" value="1" <%= "checked" if @current_user.ptivate %>>
+        <input id="private_box" name="query_private" type="checkbox" value="1" <%= "checked" if @current_user.private %>>
+          
+      </div>
+                      
+      <div>
+        <label for="username_box">Username</label>
+          
+        <input id="username_box" name="query_username" value="<%= @current_user.username %>">
           
       </div>
               

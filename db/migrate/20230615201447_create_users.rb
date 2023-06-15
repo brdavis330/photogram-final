@@ -3,9 +3,10 @@ class CreateUsers < ActiveRecord::Migration[6.0]
     create_table :users do |t|
       t.string :email
       t.string :password_digest
-      t.integer :coments_count
+      t.integer :comments_count
       t.integer :likes_count
-      t.boolean :ptivate
+      t.boolean :private
+      t.string :username
 
       t.timestamps
     end
